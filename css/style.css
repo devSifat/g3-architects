@@ -45,7 +45,8 @@ p {
     position: relative;
     overflow: hidden;
 }
-.btn::after{
+
+.btn::after {
     content: "";
     position: absolute;
     width: 25px;
@@ -57,7 +58,8 @@ p {
     transform: rotate(30deg);
     transition: 0.4s ease-in-out;
 }
-.btn:hover::after{
+
+.btn:hover::after {
     left: 100%;
 }
 
@@ -146,12 +148,75 @@ nav>ul>li>a:hover {
     line-height: 75px;
     color: #131313;
 }
-.hero-banner{
+
+.hero-banner {
     width: 100%;
     height: auto;
     border-radius: 10px;
 }
-.hero-banner>img{
+
+.hero-banner>img {
     width: 100%;
 }
+
 /* hero section end */
+
+
+
+
+
+
+/* team section start */
+.team-wrapper {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.team-img,
+.team-text {
+    flex-basis: calc(50% - 20px);
+    flex-wrap: wrap;
+}
+
+.team-img {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.team-img-box {
+    flex-basis: calc(50% - 15px);
+    overflow: hidden;
+}
+
+.team-img-box>img {
+    width: 100%;
+}
+
+.team-text {
+    display: flex;
+    align-self: center;
+    gap: 20px;
+}
+
+.team-text>h2 {
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 53px;
+    color: #727272;
+    max-width: 470px;
+}
+.team-text>h2>span:nth-child(2),
+.team-text>h2>span:nth-child(3) {
+    font-weight: 700;
+}
+.team-text>h2>span:nth-child(2){
+    color: #131313;
+}
+.team-text>h2>span:nth-child(3){
+    color: #FF900E;
+}
+
+/* team section end */

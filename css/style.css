@@ -9,7 +9,10 @@
     text-decoration: none;
     font-family: 'Work Sans';
 }
-
+::selection{
+    color: #FFF4E7;
+    background: #FF900E;
+}
 html {
     scroll-behavior: smooth;
 }

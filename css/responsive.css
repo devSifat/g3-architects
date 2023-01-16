@@ -403,6 +403,28 @@
 
 
 
+/* sponsor section start */
+@media(max-width: 900px){
+    .sponsor-top>h4{
+        font-size: 35px;
+        padding-bottom: 10px;
+    }
+}
+@media(max-width: 700px){
+    .sponsor-top>h4{
+        font-size: 30px;
+    }
+}
+@media(max-width: 500px){
+    .sponsor-top>h4{
+        font-size: 25px;
+    }
+}
+/* sponsor section end */
+
+
+
+
 
 @media(max-width: 850px) {
     p {

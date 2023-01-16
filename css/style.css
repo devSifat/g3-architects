@@ -455,3 +455,54 @@ nav>ul>li>a:hover {
 
 
 
+
+
+/* sponsor section start */
+.sponsor-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    text-align: center;
+}
+.sponsor-top{
+    max-width: 550px;
+}
+.sponsor-top>h4{
+    font-size: 45px;
+    color: #131313;
+    padding-bottom: 15px;
+}
+.sponsors-logo{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.sp-logo{
+    flex-basis: 10%;
+}
+.sp-logo>img{
+    width: 100%;
+    filter: grayscale(1);
+}
+/* sponsor section end */
+
+
+
+
+
+
+/* footer section start */
+footer{
+    padding-bottom: 70px;
+}
+.footer-wrapper{
+    width: 100%;
+    padding: 20px 30px;
+    text-align: center;
+    border-radius: 15px;
+    background: #FFF4E7;
+}
+/* footer section end */
+

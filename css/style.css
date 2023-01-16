@@ -9,10 +9,12 @@
     text-decoration: none;
     font-family: 'Work Sans';
 }
-::selection{
+
+::selection {
     color: #FFF4E7;
     background: #FF900E;
 }
+
 html {
     scroll-behavior: smooth;
 }
@@ -268,10 +270,15 @@ nav>ul>li>a:hover {
 }
 
 .f-t-bttm {
-    padding-left: 25px;
     display: flex;
     flex-direction: column;
     gap: 25px;
+}
+
+.f-t-bttm-field {
+    padding: 25px;
+    box-shadow: 0px 4px 30px #0000001c;
+    border-radius: 10px;
 }
 
 .f-t-bttm-field>h3 {
@@ -282,14 +289,16 @@ nav>ul>li>a:hover {
 }
 
 
-.features-img{
+.features-img {
     position: relative;
     height: fit-content;
 }
-.features-img>img{
+
+.features-img>img {
     width: 100%;
 }
-.features-tag{
+
+.features-tag {
     position: absolute;
     padding: 30px;
     left: 0;
@@ -299,14 +308,150 @@ nav>ul>li>a:hover {
     border-radius: 15px;
     text-align: center;
 }
+
 .features-tag>h3,
-.features-tag>p{
+.features-tag>p {
     color: #FFFFFF;
 }
-.features-tag>h3{
+
+.features-tag>h3 {
     font-size: 50px;
 }
-.features-tag>p{
+
+.features-tag>p {
     font-size: 22px;
 }
+
 /* features section end */
+
+
+
+
+
+
+/* counter section start */
+.countdown-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.count-header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 550px;
+}
+
+.count-header>h4 {
+    font-size: 45px;
+    color: #131313;
+}
+
+.count-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-evenly;
+}
+
+.count-box {
+    max-width: 200px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    padding: 20px;
+    border: 2px solid #FF900E;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+.count-box:hover{
+    box-shadow: 0px 4px 30px #ff8f0e75;
+}
+
+.count-box>span {
+    font-weight: 600;
+    font-size: 45px;
+    color: #424242;
+}
+
+/* counter section end */
+
+
+
+
+
+
+
+/* contact section start */
+.contact-form{
+    max-width: 700px;
+    flex-grow: 1;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 50px 30px;
+    border-radius: 20px;
+    background: #FFF4E7;
+    box-shadow: 0 4px 20px #fde8cf;
+}
+.contact-form>h5{
+    font-size: 35px;
+    color: #ff8f0ec7;
+}
+.contact-field{
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+.contact-field>input,
+.contact-field>textarea{
+    width: 100%;
+    font-size:20px;
+    color: #727272;
+    background: transparent;
+    outline: none;
+    border: 2px solid #ff8f0ec2;
+    padding: 10px;
+    border-radius: 5px;
+}
+.contact-field>label{
+    position: absolute;
+    top: 24px;
+    left: 20px;
+    transform: translateY(-50%);
+    color: #727272;
+    transition: 0.3s ease-in-out;
+}
+.contact-field>input:valid ~ label,
+.contact-field>textarea:valid ~ label,
+.contact-field>input:focus ~ label,
+.contact-field>textarea:focus ~ label{
+    top: 0;
+    width: fit-content;
+    background: #FFF4E7;
+}
+.contact-field>textarea{
+    height: 170px;
+    resize: none;
+}
+.contact-field>button{
+    width: fit-content;
+    outline: none;
+    cursor: pointer;
+    border: none;
+}
+/* contact section end */
+
+
+
+
